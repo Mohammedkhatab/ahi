@@ -1,0 +1,140 @@
+.abouthicis p {
+    font-size: 25px;
+}
+
+.DRali p, .DR-shehata p {
+    font-size: 20px;
+}
+
+.DRali img {
+    border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+    .DRali .container, .DR-shehata .container{
+        flex-direction: column-reverse;
+    }
+}
+
+.DR-shehata img {
+    width: 340px;
+    border-radius: 50%;
+}
+
+.sss .container {
+    color: white;
+    line-height: 1.6;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    color: #e6dddd;
+    text-align: right;
+}
+
+.sss .container h2 {
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.sss .container h2::before {
+    content:'';
+    position: absolute;
+    bottom: -5px;
+    background-color:rgba(46, 190, 200, 0.549);
+    height: 3px;
+    box-sizing: border-box;
+    width:100%;
+}
+
+.sss .container .arabic ul li {
+    padding: 10px;
+}
+
+.sss .container .english {
+    margin-bottom: auto;
+}
+
+.hhh .container {
+    flex-direction: column;
+}
+
+.hhh .container p {
+    font-size: 25px;
+}
+
+.hhii .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+@media (max-width: 992px) {
+    .hhii .container {
+        flex-direction: column;
+        gap: 35px;
+    }
+}
+
+.hhii .container .id-hh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hhii .container .id-hh:hover {
+    background-color: #141313b1;
+    border-radius: 10%;
+    scale: 1.2;
+}
+
+.hhii .container .id-hh:hover i {
+    color: white;
+}
+
+.hhii .container .id-hh:hover a {
+    color: rgb(46, 190, 200);
+}
+
+.hhii .container .id-hh i{
+    padding-bottom: 5px;
+    color: rgb(46, 190, 200);
+}
+
+.hhii .container .id-hh a{
+    text-decoration: none;
+    padding-top: 5px;
+    color: white;
+}
+
+.tec {
+    width: fit-content;
+    margin: auto;
+    padding: 25px;
+}
+
+.tec button {
+    padding: 15px;
+    background-color: rgb(46, 190, 200);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.tec button:hover {
+    background-color: rgba(46, 190, 200, 0.386);
+}
+
+.tec button a {
+
+}

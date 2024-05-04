@@ -1,0 +1,267 @@
+:root{
+    --main-color:rgb(46, 190, 200);
+ }
+ 
+ 
+ *
+ {  
+ 
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+ body{
+     font-family:"work sans",sans-serif ;
+     background-color: #191b1f;
+     
+     
+ }
+ 
+ .container{
+     
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+ /* msall  */
+ 
+ @media (min-width:768px){
+     .container{
+         width: 750px;
+     }
+ }
+ /* medium */
+ @media (min-width:992px){
+     .container{
+         width: 970px;
+     }
+ }
+ /* large */
+ 
+ @media (min-width:1200px){
+     .container{
+         width: 1170px;
+     }
+ } 
+  @media (max-width:767px){
+    .special-heading{
+       font-size: 60px;
+    } 
+    .special-heading + p{
+       margin-top: -20px;
+    }
+  }
+  .header{
+     padding: 10px;
+  }
+  .header .container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+  }
+  .header .logo{
+     width: 280px;
+  }
+  .links a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    width: 80px;
+  }
+  .links a:hover{
+     color: rgb(46, 190, 200);
+  }
+ .container .links ul{
+    
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 20px 0;
+       font-weight:800;
+       list-style: none;
+       font-size:23px;
+       
+       
+     
+  }
+  .container .links ul li{
+    transition-duration: 0.3s;
+  }
+  
+  .container .links ul li:hover {
+    padding-right: 10px;
+    border-bottom: 5px;
+  }
+  /* end header */
+ /* start lading */
+ .lading{
+    background-image: url(../no/rrr.jpg) ;
+    background-size: cover;
+    position: relative;
+    height: calc(100vh - 64px);  
+    
+ }
+ /* start nour */
+ .h h1{
+   text-align: center;
+   color: rgb(255, 255, 255);
+   font-size:xx-large;
+   margin: 15px;     
+   position: relative;
+}
+.h h1::before{
+   content:'';
+   position: absolute;
+   
+   bottom: -5px;
+   background-color:rgb(46, 190, 200);
+   height: 3px;
+   box-sizing: border-box;
+   width:270;
+}
+.nour .container{
+   display: flex;
+   justify-content: space-between;
+}
+.nour{
+   background-color: #090a0e82;
+}
+.nour .container p{
+   line-height: 65px;
+   font-size: large;
+   font-weight: 600;
+   padding:20px;
+   color: #e6dddd;
+   text-align: right;
+}
+.nour .container img{
+   margin-top: 5px;
+   padding: 15px;
+   width: 561px;
+   height: 343px;
+   
+}
+/* end nour */
+/* start no */
+.vid h1{
+   text-align: center;
+   color: rgb(255, 255, 255);
+   font-size:xx-large;
+   margin: 15px;     
+   position: relative;
+}
+.vid h1::before{
+   content:'';
+   position: absolute;
+   bottom: -5px;
+   background-color:rgb(46, 190, 200);
+   height: 3px;
+   box-sizing: border-box;
+   width:245;
+}
+.no{
+   background-color: #090a0e82;
+}
+.no .container{
+   display: flex;
+   justify-content: center;
+   width: 960px;
+   height: 540px;
+}
+/* end no */
+/* start nm */
+.nm{
+   background-color: #090a0e82;
+}
+
+.img h1{
+   text-align: center;
+   color: rgb(255, 255, 255);
+   font-size:xx-large;
+   margin: 15px;     
+   position: relative;
+
+}
+.img h1::before{
+   content:'';
+   position: absolute;
+
+   bottom: -5px;
+   background-color:rgb(46, 190, 200);
+   height: 3px;
+   box-sizing: border-box;
+   width:240;
+}
+.nm p{
+   line-height: 65px;
+   font-size: large;
+   font-weight: 800;
+   padding:20px;
+   color: #e6dddd;
+   text-align: right;
+}
+
+
+/* end header  */
+/* start footer */
+.footer .container{
+    max-width: 1170px;
+    
+    margin: auto;
+ }
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ ul {
+    list-style: none;
+ }
+ .footer{
+    background-color: #000000b1;
+    padding: 70px 0;
+ 
+ }
+ .footer-col{
+    width: 50%;
+    padding: 0 15px;
+ }
+ .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight:500;
+    position: relative;
+ }
+ .footer-col h4::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:rgb(46, 190, 200);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+ }
+ .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition-duration: 0.3s;
+    margin-bottom: 8px;
+    line-height: 30px;
+ }
+ .footer-col ul li a:hover{
+    padding-left: 15px;
+    font-size: 18px;
+    color: rgb(46, 190, 200);
+ }
+ .footer-col ul li a i{
+    padding: 8px;
+ }
+/* end footer  */
